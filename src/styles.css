@@ -1,3 +1,22 @@
+body {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.container {
+  margin: 150px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+form input[type="text"],
+input[type="submit"] {
+  margin-top: 30px;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+  font-family: "Courier New", Courier, monospace;
+}
+footer {
+  margin-top: 70px;
+}
 h1 {
-  color: green;
 }
