@@ -1,6 +1,9 @@
 body {
   font-family: "Courier New", Courier, monospace;
 }
+h1 {
+  color: rgb(72, 72, 72);
+}
 
 .container {
   margin: 150px;
@@ -19,8 +22,12 @@ input[type="submit"] {
   font-family: "Courier New", Courier, monospace;
 }
 
-.generated-poems {
+#generated-poems {
   margin: 27px;
+  font-family: "Courier New", Courier, monospace;
+}
+.heading {
+  font-style: italic;
 }
 .line2-3 {
   margin-left: 30px;
