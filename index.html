@@ -12,14 +12,22 @@
 
       <div class="heading">
         In this realm where words take flight,<br />
-        Echoes of dreams in starry light,<br />
-        Type a word, unleash the glow.<br />
-        A poem awaits, let it flow.<br />
+        <div class="line2-3">
+          Echoes of dreams in starry light,<br />
+          Type a word, unleash the glow.<br />
+          A poem awaits, let it flow.<br />
+        </div>
       </div>
-      <form>
-        I want to read a poem about
-        <input type="text" placeholder="love" autofocus required />
+      <form id="form-submission">
+        I wish to read a poem about
+        <input type="text" placeholder="love" id="topic" autofocus required />
       </form>
+      <div id="generated-poems">
+        Stars adorn the night with light, <br />
+        Whispers soft in moon's embrace.<br />
+        Love's sweet song takes flight anew, <br />
+        In the hush of twilight's grace.
+      </div>
       <footer>
         Coded with love by Nydia Subur,<br />
         Open sourced at
@@ -29,5 +37,7 @@
     </div>
 
     <script src="src/script.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
   </body>
 </html>
