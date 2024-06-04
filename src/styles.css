@@ -5,7 +5,7 @@ body {
 .container {
   margin: 150px;
   margin-left: 300px;
-  max-width: 800px;
+
   font-weight: 500;
   line-height: 1.5;
 }
@@ -25,8 +25,21 @@ input[type="submit"] {
 .line2-3 {
   margin-left: 30px;
 }
+
+.blink {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
 footer {
   margin-top: 70px;
-}
-h1 {
 }
