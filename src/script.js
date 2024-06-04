@@ -5,11 +5,15 @@ formSubmission.addEventListener("submit", generatePoem);
 
 function displayAIPoem(response) {
   console.log("displayPoem function entered");
+
   new Typewriter("#generated-poems", {
     strings: response.data.answer,
     autoStart: true,
     delay: 1,
     cursor: "",
+    deleteSpeed: 40,
+    delay: 25,
+    loop: false,
   });
 }
 function generatePoem(event) {
@@ -23,6 +27,7 @@ function generatePoem(event) {
 
   console.log(`topic: ${topic}`);
   console.log(`url: ${url}`);
+  generatedPoems.innerHTML = `<div class="blink">⏳ generating poem about ${topic}...</div>`;
 
   axios
     .get(url)
@@ -32,5 +37,3 @@ function generatePoem(event) {
       console.log(error);
     });
 }
-
-//generatedPoems.innerHTML = "<div> wow</div>";
